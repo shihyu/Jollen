@@ -8,13 +8,13 @@ int main(void)
 {
     int fd;
     int ret_val=0;
-    char hostname[1024];
+    char hostname[128];
     pid_t child;
     char* private_d="hi, hugh is here";
-    hostname[1023] = '\0';
-    gethostname(hostname, 1023);
+    hostname[127] = '\0';
+    gethostname(hostname, 128);
 
-   // child = fork();
+    child = fork();
 
     fd = open("/dev/cdata", O_RDWR);
  
@@ -23,7 +23,7 @@ int main(void)
 	printf("1 open file failed fd=%d\n\n", fd);
     }
     
-    #if 0
+    #if 1
     if (child > 0 ){
     	write(fd, "parent:hello", 12);
     }
@@ -32,7 +32,7 @@ int main(void)
     }
     #endif
 
-    write(fd, "parent:hello", 12);
+    //write(fd, "parent:hello", 12);
     
     //1. send device name to buf firse
     ret_val = ioctl(fd, IOCTL_WRITE, hostname);

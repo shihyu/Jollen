@@ -24,14 +24,14 @@ struct cdata_t {
     struct timer_list   timer;
 };
 
-static int cdata_open(struct inode *inode, struct file *filp)
+int cdata_open(struct inode *inode, struct file *filp)
 {
     struct cdata_t *cdata;
 
 
     printk(KERN_ALERT "hugh cdata: in cdata_open\n");
 
-    printk(KERN_ALERT "filep=%p\n", (void*)filp );
+    printk(KERN_ALERT "filep=0x%p\n", (void*)filp );
 
 
     cdata = (struct cdata_t *)kmalloc(sizeof(struct cdata_t), GFP_KERNEL);
@@ -47,13 +47,11 @@ static int cdata_open(struct inode *inode, struct file *filp)
     return 0;
 }
 
-static int cdata_ioctl(struct file *filp, unsigned int cmd, unsigned long arg)
+long cdata_ioctl(struct file *filp, unsigned int cmd, unsigned long arg)
 {
-	char* temp;
+	char* temp_str;
     	struct cdata_t *cdata;
 
-        //printk(KERN_ALERT "hugh cdata: in cdata_ioctl()\n");
-		
 	cdata=(struct cdata_t *)filp->private_data;
 	
 	switch(cmd) {
@@ -64,14 +62,14 @@ static int cdata_ioctl(struct file *filp, unsigned int cmd, unsigned long arg)
       	break;
 
 	case IOCTL_SYNC:
-		temp=(char*)cdata->buf;
+		temp_str=(char*)cdata->buf;
       		printk(KERN_ALERT "hugh cdata: in ioctl: IOCTL_SYNC");
-		printk(KERN_ALERT "cdata->buf=%s \n", temp );
+		printk(KERN_ALERT "cdata->buf=%s \n", temp_str );
 	break;
 
 	case IOCTL_NAME:
-		temp=(char*)arg;
-      		//printk(KERN_ALERT "hugh cdata: received msg= %s", temp);
+		temp_str=(char*)arg;
+      		printk(KERN_ALERT "hugh cdata: received msg= %s", temp_str);
 	break;
 
 	case IOCTL_WRITE:
@@ -86,7 +84,7 @@ static int cdata_ioctl(struct file *filp, unsigned int cmd, unsigned long arg)
 	return 0;
 }
 
-static int cdata_release(struct inode *inode, struct file *filp)
+int cdata_release(struct inode *inode, struct file *filp)
 {
         struct cdata_t *cdata = (struct cdata_t *)filp->private_data;
 
@@ -95,7 +93,7 @@ static int cdata_release(struct inode *inode, struct file *filp)
         return 0;
 }
 
-ssize_t cdata_write(struct file *filp, char __user *buf, size_t size, loff_t *off)
+ssize_t cdata_write(struct file *filp, const char __user *buf, size_t size, loff_t *off)
 {
     int i;
     struct cdata_t *cdata = (struct cdata_t *)filp->private_data;
@@ -121,12 +119,12 @@ ssize_t cdata_write(struct file *filp, char __user *buf, size_t size, loff_t *of
 }
 
 struct file_operations cdata_fops = {
-     owner: 	      THIS_MODULE,
-     open:  	      cdata_open,
-     release:         cdata_release,
-     unlocked_ioctl:           cdata_ioctl,
+     .owner = 	      THIS_MODULE,
+     .open =  	      cdata_open,
+     .release =         cdata_release,
+     .unlocked_ioctl =           cdata_ioctl,
      //read:           cdata_read,
-     write:          cdata_write,
+     .write =          cdata_write,
 };
 
 /*
@@ -140,7 +138,7 @@ static struct miscdevice cdata_misc = {
 int my_init_module(void)
 {
 
-	if(register_chrdev(121, "cdata", &cdata_fops) < 0)
+	if(register_chrdev(CDATA_MAJOR, "cdata", &cdata_fops) < 0)
 	{
 		printk("KERN_INFO" "CDATA: canʼt register driver\n");
 		return -1;
@@ -156,10 +154,10 @@ int my_init_module(void)
          return 0;
 }
  
-void my_cleanup_module(struct inode *inode, struct file *filp)
+void my_cleanup_module(void)
 {
 
-	unregister_chrdev(121, "cdata");	
+	unregister_chrdev(CDATA_MAJOR, "cdata");	
          //misc_deregister(&cdata_misc);
 	
         printk(KERN_ALERT "hugh cdata module: unregisterd.\n");
