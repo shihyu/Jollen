@@ -1,15 +1,24 @@
 #include <linux/module.h>
+#include <linux/version.h>
 #include <linux/kernel.h>
 #include <linux/init.h>
-#include <linux/sched.h>
 #include <linux/fs.h>
+#include <linux/delay.h>
+#include <linux/vmalloc.h>
+#include <linux/sched.h>
+#include <linux/timer.h>
+#include <linux/slab.h>
+#include <linux/mm.h>
+#include <linux/interrupt.h>
+#include <linux/irq.h>
 #include <linux/miscdevice.h>
-#include <linux/wait.h>
+#include <linux/input.h>
+#include <linux/semaphore.h>
+#include <linux/spinlock.h>
 #include <asm/io.h>
 #include <asm/uaccess.h>
-#include <linux/slab.h>
-#include <linux/types.h>
 #include "cdata_ioctl.h"
+
 
 #ifdef CONFIG_SMP
 #define __SMP__
@@ -38,9 +47,10 @@ int cdata_open(struct inode *inode, struct file *filp)
     cdata->buf = (char *)kmalloc(128, GFP_KERNEL);
 
     cdata->index = 0;
-    //init_waitqueue_head (&cdata->wq);
 
-    //init_timer(&cdata->timer);
+    init_waitqueue_head(&cdata->wq);
+   
+    init_timer(&cdata->timer);
 
     filp->private_data = (void *)cdata;
 
@@ -87,10 +97,23 @@ long cdata_ioctl(struct file *filp, unsigned int cmd, unsigned long arg)
 int cdata_release(struct inode *inode, struct file *filp)
 {
         struct cdata_t *cdata = (struct cdata_t *)filp->private_data;
-
+	del_timer(&cdata->timer);
         printk(KERN_ALERT "hugh cdata: in cdata_release()\n");
         printk(KERN_ALERT "hugh cdata: flush buf = %s\n", cdata->buf);
         return 0;
+}
+
+void flush_data(unsigned long priv)
+{
+
+	struct cdata_t *cdata = (struct cdata_t *) priv;	
+	//move data to HD
+
+	//remove data from buffer
+	
+	cdata->index=0;
+	//wake up the task
+	wake_up(&cdata->wq);
 }
 
 ssize_t cdata_write(struct file *filp, const char __user *buf, size_t size, loff_t *off)
@@ -99,17 +122,51 @@ ssize_t cdata_write(struct file *filp, const char __user *buf, size_t size, loff
     struct cdata_t *cdata = (struct cdata_t *)filp->private_data;
     char *data = cdata->buf;
     unsigned int index = cdata->index;
-    
+    struct timer_list *timer = &cdata->timer;
+
+    DECLARE_WAITQUEUE(wait, current);
+
     for(i = 0; i < size ; i++)
     {
 	copy_from_user(&data[index], &buf[i], 1);
 	index++;
+	
+	//remember to move overflow here
+
     }
     
     if(index >= 128){
 	//no space
-	//current->state=TASK_INTERRUTIBLE;
-	//schedule();
+	timer->expires = jiffies + 500;
+	timer->data = (unsigned long)cdata;
+	timer->function = &flush_data;
+	add_timer(timer);
+
+#if 0 //not atomic 
+	//interruptible_sleep_on(&cdata->wq);
+
+#else //atomic
+
+	#if 0 //macro with spinlock
+
+		prepare_to_wait(&cdata->wq, &wait, TASK_INTERRUPTIBLE);
+
+	#else //step by step
+		//1. change status
+		set_current_state(TASK_INTERRUPTIBLE);
+	
+		//2. put current into wait queue
+    		add_wait_queue(&cdata->wq, &wait);
+	
+		//init_waitqueue_head(&cdata->wq);
+		//3. call schedule
+		schedule();
+	#endif
+	
+#endif	
+
+	index = cdata->index; // *sys*
+
     }
 
     printk(KERN_ALERT "hugh cdata: cdata_write = %s\n", data);
