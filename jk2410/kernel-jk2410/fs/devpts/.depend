@@ -1,0 +1,29 @@
+devpts_i.h: \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/tty.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/devpts_fs.h
+	@touch devpts_i.h
+inode.o: inode.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kdev_t.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/locks.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/major.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/stat.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/tty.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/bitops.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/uaccess.h \
+   devpts_i.h
+root.o: root.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/errno.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/stat.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/param.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   devpts_i.h
+.PRECIOUS:	devpts_i.h \
+

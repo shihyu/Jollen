@@ -1,0 +1,81 @@
+atyfb_base.o: atyfb_base.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/errno.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mm.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/vmalloc.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/selection.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/console.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fb.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pci.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/vt_kern.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kd.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/io.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/uaccess.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/video/fbcon.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/video/fbcon-cfb8.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/video/fbcon-cfb16.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/video/fbcon-cfb24.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/video/fbcon-cfb32.h \
+   mach64.h \
+   atyfb.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/video/macmodes.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/adb/pmu.h) \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/adb.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pmu.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/bootx/text.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/nvram.h) \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/nvram.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/fb/compat/xpmac.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/pmac/backlight.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/atari.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/ppc.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/fb/aty/gx.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/fb/aty/ct.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/pmac/pbook.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/chip/id.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/stat0.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/stat1.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/pci.h)
+atyfb.h: \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/pmac/pbook.h)
+	@touch atyfb.h
+mach64_accel.o: mach64_accel.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fb.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/video/fbcon.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/video/fbcon-cfb8.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/video/fbcon-cfb16.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/video/fbcon-cfb24.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/video/fbcon-cfb32.h \
+   mach64.h \
+   atyfb.h
+mach64_ct.o: mach64_ct.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fb.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/io.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/video/fbcon.h \
+   mach64.h \
+   atyfb.h
+mach64_cursor.o: mach64_cursor.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/console.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fb.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/io.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/uaccess.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/video/fbcon.h \
+   mach64.h \
+   atyfb.h
+mach64_gx.o: mach64_gx.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fb.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/io.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/video/fbcon.h \
+   mach64.h \
+   atyfb.h
+.PRECIOUS:	atyfb.h \
+

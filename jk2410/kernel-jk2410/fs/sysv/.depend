@@ -1,0 +1,42 @@
+balloc.o: balloc.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sysv_fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/locks.h
+dir.o: dir.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sysv_fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pagemap.h
+file.o: file.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sysv_fs.h
+ialloc.o: ialloc.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sysv_fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/stddef.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/stat.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/locks.h
+inode.o: inode.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sysv_fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/locks.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/smp_lock.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/highuid.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/byteorder.h
+itree.o: itree.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sysv_fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/locks.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/smp_lock.h
+namei.o: namei.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sysv_fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pagemap.h
+super.o: super.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sysv_fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h
+symlink.o: symlink.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fs.h

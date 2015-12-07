@@ -1,0 +1,72 @@
+autcpu12.o: autcpu12.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mtd/mtd.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mtd/nand.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mtd/partitions.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/io.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/arch/hardware.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/sizes.h
+bon.o: bon.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mtd/mtd.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mtd/partitions.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mtd/nand_ecc.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/errno.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/blk.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/devfs_fs_kernel.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/proc/fs.h) \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/proc_fs.h
+nand.o: nand.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/errno.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mtd/mtd.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mtd/nand.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mtd/nand_ids.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/interrupt.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/io.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/mtd/nand/ecc.h) \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mtd/nand_ecc.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/mtd/nand/verify/write.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/mtd/nand/ecc/jffs2.h)
+nand_ecc.o: nand_ecc.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h
+smc.o: smc.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/errno.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/interrupt.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/io.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mtd/mtd.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mtd/nand.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mtd/nand_ids.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mtd/nand_ecc.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/mtd/nand/verify/write.h)
+smc_s3c2410.o: smc_s3c2410.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mtd/mtd.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mtd/nand.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/irq.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/io.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/pm.h) \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pm.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/mtd/smc/s3c2410/smdk/partition.h) \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mtd/partitions.h
+spia.o: spia.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mtd/mtd.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mtd/nand.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mtd/partitions.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/io.h

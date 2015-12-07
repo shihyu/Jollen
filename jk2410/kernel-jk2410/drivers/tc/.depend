@@ -1,0 +1,51 @@
+lk201.o: lk201.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/errno.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/tty.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kbd_ll.h \
+   zs.h \
+   lk201.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/magic/sysrq.h)
+tc.o: tc.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ioport.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/errno.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/ptrace.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h
+zs.o: zs.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/version.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/errno.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/signal.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/timer.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/interrupt.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/tty.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/tty_flip.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/major.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fcntl.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mm.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ioport.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/serial/console.h) \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/console.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/io.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/pgtable.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/irq.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/system.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/segment.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/bitops.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/uaccess.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/decstation.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/baget/mips.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/kgdb.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/magic/sysrq.h) \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sysrq.h \
+   zs.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/devfs/fs.h)

@@ -1,0 +1,1 @@
+#undef  CONFIG_JK2410_LED

@@ -1,0 +1,178 @@
+background.o: background.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/unistd.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/jffs2.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mtd/mtd.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/interrupt.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/completion.h \
+   nodelist.h
+build.o: build.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/jffs2.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   nodelist.h
+compr.o: compr.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/errno.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/jffs2.h
+compr_rtime.o: compr_rtime.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/errno.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h
+compr_rubin.o: compr_rubin.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/types.h \
+   compr_rubin.h \
+   histo_mips.h
+compr_rubin.h: \
+   pushpull.h
+	@touch compr_rubin.h
+comprtest.o: comprtest.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/types.h
+compr_zlib.o: compr_zlib.c \
+   zlib.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mtd/compatmac.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/jffs2.h \
+   nodelist.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/types.h
+crc32.o: crc32.c \
+   crc32.h
+crc32.h: \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/types.h
+	@touch crc32.h
+dir.o: dir.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mtd/compatmac.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/jffs2.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/jffs2_fs_i.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/jffs2_fs_sb.h \
+   nodelist.h \
+   crc32.h
+erase.o: erase.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mtd/mtd.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/jffs2.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/interrupt.h \
+   nodelist.h \
+   crc32.h
+file.o: file.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mtd/compatmac.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pagemap.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/jffs2.h \
+   nodelist.h \
+   crc32.h
+gc.o: gc.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mtd/mtd.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/jffs2.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/interrupt.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pagemap.h \
+   nodelist.h \
+   crc32.h
+ioctl.o: ioctl.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fs.h
+malloc.o: malloc.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/jffs2.h \
+   nodelist.h
+nodelist.o: nodelist.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/jffs2.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mtd/mtd.h \
+   nodelist.h
+nodelist.h: \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/jffs2_fs_sb.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/jffs2_fs_i.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/jffs2/fs/debug.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/mizi.h) \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware.h
+	@touch nodelist.h
+nodemgmt.o: nodemgmt.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/jffs2.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mtd/mtd.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/interrupt.h \
+   nodelist.h
+pushpull.o: pushpull.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   pushpull.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/errno.h
+read.o: read.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/jffs2.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mtd/mtd.h \
+   nodelist.h \
+   crc32.h
+readinode.o: readinode.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mtd/mtd.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/jffs2.h \
+   nodelist.h \
+   crc32.h
+scan.o: scan.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/jffs2.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mtd/mtd.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pagemap.h \
+   nodelist.h \
+   crc32.h
+super.o: super.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/version.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/list.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/jffs2.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pagemap.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mtd/mtd.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/interrupt.h \
+   nodelist.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/jffs2/fs/debug.h)
+symlink.o: symlink.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/jffs2.h \
+   nodelist.h
+write.o: write.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/jffs2.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mtd/mtd.h \
+   nodelist.h \
+   crc32.h
+zlib.o: zlib.c \
+   zlib.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h
+.PRECIOUS:	compr_rubin.h \
+	crc32.h \
+	nodelist.h \
+

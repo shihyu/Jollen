@@ -1,0 +1,78 @@
+card.h: \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/timer.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/isdnif.h \
+   message.h
+	@touch card.h
+command.o: command.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   includes.h \
+   hardware.h \
+   message.h \
+   card.h \
+   scioc.h
+debug.o: debug.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h
+event.o: event.c \
+   includes.h \
+   hardware.h \
+   message.h \
+   card.h
+hardware.h: \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/param.h
+	@touch hardware.h
+includes.h: \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/version.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/errno.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/segment.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/io.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mm.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ioport.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/timer.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/wait.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/isdnif.h \
+   debug.h
+	@touch includes.h
+init.o: init.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   includes.h \
+   hardware.h \
+   card.h
+interrupt.o: interrupt.c \
+   includes.h \
+   hardware.h \
+   message.h \
+   card.h
+ioctl.o: ioctl.c \
+   includes.h \
+   hardware.h \
+   message.h \
+   card.h \
+   scioc.h
+message.o: message.c \
+   includes.h \
+   hardware.h \
+   message.h \
+   card.h
+packet.o: packet.c \
+   includes.h \
+   hardware.h \
+   message.h \
+   card.h
+shmem.o: shmem.c \
+   includes.h \
+   hardware.h \
+   card.h
+timer.o: timer.c \
+   includes.h \
+   hardware.h \
+   message.h \
+   card.h
+.PRECIOUS:	card.h \
+	hardware.h \
+	includes.h \
+

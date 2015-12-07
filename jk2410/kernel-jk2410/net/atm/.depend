@@ -1,0 +1,356 @@
+addr.o: addr.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atm.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atmdev.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/uaccess.h \
+   signaling.h \
+   addr.h
+addr.h: \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atm.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atmdev.h
+	@touch addr.h
+atm_misc.o: atm_misc.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atm.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atmdev.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/skbuff.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sonet.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/bitops.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/atomic.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/errno.h
+clip.o: clip.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/errno.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/netdevice.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/skbuff.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/wait.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/timer.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/if_arp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/notifier.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atm.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atmdev.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atmclip.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atmarp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ip.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/in.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/if.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/inetdevice.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/bitops.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/route.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/icmp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/param.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/byteorder.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/system.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/uaccess.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/atomic.h \
+   common.h \
+   resources.h \
+   ipcommon.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/atmclip.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/atm/clip/no/icmp.h)
+common.o: common.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kmod.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/net.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atm.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atmdev.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atmclip.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atmarp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sonet.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/socket.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/errno.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/capability.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mm.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/time.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/skbuff.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/bitops.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/sock.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/uaccess.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/atomic.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/poll.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/ioctls.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/atm/lane.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/atm/lane/module.h) \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atmlec.h \
+   lec.h \
+   lec_arpc.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/atm/mpoa.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/atm/mpoa/module.h) \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atmmpc.h \
+   mpc.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/atm/tcp.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/atm/tcp/module.h) \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atm_tcp.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/pppoatm.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/pppoatm/module.h) \
+   resources.h \
+   common.h \
+   protocols.h \
+   addr.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/atm/clip.h) \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/atmclip.h \
+   signaling.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/bridge.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/bridge/module.h)
+common.h: \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/net.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/poll.h
+	@touch common.h
+ipcommon.o: ipcommon.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/skbuff.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/netdevice.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/in.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atmdev.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atmclip.h \
+   common.h \
+   ipcommon.h
+ipcommon.h: \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/skbuff.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/netdevice.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atmdev.h
+	@touch ipcommon.h
+lec_arpc.h: \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atm.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atmdev.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/if_ether.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atmlec.h
+	@touch lec_arpc.h
+lec.o: lec.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/bitops.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/if_ether.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/netdevice.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/etherdevice.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/sock.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/skbuff.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ip.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/byteorder.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/uaccess.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/arp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/dst.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/proc_fs.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/tr.h) \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/trdevice.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atmdev.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atmlec.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/bridge.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/bridge/module.h) \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/if_bridge.h \
+   ../bridge/br_private.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   lec.h \
+   lec_arpc.h \
+   resources.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/timer.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/param.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/atomic.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/inetdevice.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/route.h
+lec.h: \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atmdev.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/netdevice.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atmlec.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/bridge.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/bridge/module.h) \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/if_bridge.h
+	@touch lec.h
+mpc.o: mpc.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/timer.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/bitops.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/if_ether.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/netdevice.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/etherdevice.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/sock.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/skbuff.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ip.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/byteorder.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/uaccess.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/checksum.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/arp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/dst.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/proc_fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atmdev.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atmlec.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atmmpc.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   lec.h \
+   mpc.h \
+   resources.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/proc/fs.h)
+mpc.h: \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atm.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atmmpc.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/skbuff.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/spinlock.h \
+   mpoa_caches.h
+	@touch mpc.h
+mpoa_caches.o: mpoa_caches.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atmmpc.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/time.h \
+   mpoa_caches.h \
+   mpc.h
+mpoa_caches.h: \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/netdevice.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atm.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atmdev.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atmmpc.h
+	@touch mpoa_caches.h
+mpoa_proc.o: mpoa_proc.c \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/proc/fs.h) \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/errno.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mm.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/proc_fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/time.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/uaccess.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atmmpc.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atm.h \
+   mpc.h \
+   mpoa_caches.h
+pppoatm.o: pppoatm.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/skbuff.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atm.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atmdev.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ppp_defs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/if_ppp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ppp_channel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atmppp.h
+proc.o: proc.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mm.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/stat.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/proc_fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/errno.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atm.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atmdev.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/netdevice.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atmclip.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atmarp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/if_arp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/uaccess.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/atomic.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/param.h \
+   resources.h \
+   common.h \
+   signaling.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/atm/clip.h) \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/atmclip.h \
+   ipcommon.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/atm/lane.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/atm/lane/module.h) \
+   lec.h \
+   lec_arpc.h
+pvc.o: pvc.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/net.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atm.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atmdev.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atmclip.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/errno.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/skbuff.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/bitops.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/sock.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/atm/clip.h) \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/atmclip.h \
+   resources.h \
+   common.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/smp_lock.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/proc/fs.h)
+raw.o: raw.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atmdev.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/skbuff.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mm.h \
+   common.h \
+   protocols.h
+resources.o: resources.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ctype.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atmdev.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/bitops.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/sock.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/segment.h \
+   common.h \
+   resources.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/proc/fs.h)
+resources.h: \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atmdev.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/proc/fs.h) \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/proc_fs.h
+	@touch resources.h
+signaling.o: signaling.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/errno.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/skbuff.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/wait.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atm.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atmsap.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atmsvc.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atmdev.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/bitops.h \
+   resources.h \
+   signaling.h
+signaling.h: \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atm.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atmdev.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atmsvc.h
+	@touch signaling.h
+svc.o: svc.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/net.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/errno.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/skbuff.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/wait.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fcntl.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atm.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atmsap.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atmsvc.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/atmdev.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/bitops.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/sock.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/uaccess.h \
+   resources.h \
+   common.h \
+   signaling.h \
+   addr.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/smp_lock.h
+.PRECIOUS:	addr.h \
+	common.h \
+	ipcommon.h \
+	lec_arpc.h \
+	lec.h \
+	mpc.h \
+	mpoa_caches.h \
+	resources.h \
+	signaling.h \
+

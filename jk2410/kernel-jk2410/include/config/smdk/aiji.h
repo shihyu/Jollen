@@ -1,0 +1,1 @@
+#define CONFIG_SMDK_AIJI 1

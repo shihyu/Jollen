@@ -1,0 +1,1 @@
+#define CONFIG_CERF_CS8900A 1

@@ -1,0 +1,61 @@
+utalloc.o: utalloc.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acpi.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acparser.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acinterp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acnamesp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acglobal.h
+utcopy.o: utcopy.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acpi.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acinterp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acnamesp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/amlcode.h
+utdebug.o: utdebug.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acpi.h
+utdelete.o: utdelete.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acpi.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acinterp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acnamesp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/actables.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acparser.h
+uteval.o: uteval.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acpi.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acnamesp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acinterp.h
+utglobal.o: utglobal.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acpi.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acevents.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acnamesp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acinterp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/amlcode.h
+utinit.o: utinit.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acpi.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/achware.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acnamesp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acevents.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acparser.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acdispat.h
+utmath.o: utmath.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acpi.h
+utmisc.o: utmisc.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acpi.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acevents.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/achware.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acnamesp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acinterp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/amlcode.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acdebug.h
+utobject.o: utobject.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acpi.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acinterp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acnamesp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/actables.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/amlcode.h
+utxface.o: utxface.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acpi.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acevents.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/achware.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acnamesp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acinterp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/amlcode.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acdebug.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acexcep.h

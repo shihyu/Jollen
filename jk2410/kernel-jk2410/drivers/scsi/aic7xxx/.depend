@@ -1,0 +1,66 @@
+aic7770.o: aic7770.c \
+   aic7xxx_osm.h \
+   aic7xxx_inline.h \
+   aic7xxx_93cx6.h
+aic7770_linux.o: aic7770_linux.c \
+   aic7xxx_osm.h
+aic7xxx_93cx6.o: aic7xxx_93cx6.c \
+   aic7xxx_osm.h \
+   aic7xxx_inline.h \
+   aic7xxx_93cx6.h
+aic7xxx.o: aic7xxx.c \
+   aic7xxx_osm.h \
+   aic7xxx_inline.h \
+   aicasm/aicasm_insformat.h \
+   aic7xxx_seq.h
+aic7xxx.h: \
+   aic7xxx_reg.h
+	@touch aic7xxx.h
+aic7xxx_linux.o: aic7xxx_linux.c \
+   aic7xxx_osm.h \
+   aic7xxx_inline.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   ../sd.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mm.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/blk.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/aic7xxx/reset/delay/ms.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/aic7xxx/proc/stats.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/aic7xxx/cmds/per/device.h) \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/notifier.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/reboot.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/pci.h) \
+   ../scsi_module.c
+aic7xxx_linux_pci.o: aic7xxx_linux_pci.c \
+   aic7xxx_osm.h
+aic7xxx_osm.h: \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/blk.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/blkdev.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ioport.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pci.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/version.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/byteorder.h \
+   ../scsi.h \
+   ../hosts.h \
+   cam.h \
+   queue.h \
+   scsi_message.h \
+   aic7xxx_linux_host.h \
+   aic7xxx.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/spinlock.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/smp.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/pci.h)
+	@touch aic7xxx_osm.h
+aic7xxx_pci.o: aic7xxx_pci.c \
+   aic7xxx_osm.h \
+   aic7xxx_inline.h \
+   aic7xxx_93cx6.h
+aic7xxx_proc.o: aic7xxx_proc.c \
+   aic7xxx_osm.h \
+   aic7xxx_inline.h
+.PRECIOUS:	aic7xxx.h \
+	aic7xxx_osm.h \
+

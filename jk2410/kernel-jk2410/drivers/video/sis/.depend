@@ -1,0 +1,71 @@
+init301.o: init301.c \
+   init301.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/fb/sis/300.h) \
+   oem300.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/fb/sis/315.h) \
+   oem310.h
+init301.h: \
+   osdef.h \
+   initdef.h \
+   vgatypes.h \
+   vstruct.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/io.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sisfb.h
+	@touch init301.h
+init.o: init.c \
+   init.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/fb/sis/300.h) \
+   300vtbl.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/fb/sis/315.h) \
+   310vtbl.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/fb/sis/300h.h)
+init.h: \
+   osdef.h \
+   initdef.h \
+   vgatypes.h \
+   vstruct.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/io.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sisfb.h
+	@touch init.h
+sis_main.o: sis_main.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/errno.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mm.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/tty.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fb.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/console.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/selection.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ioport.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pci.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/vt_kern.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/capability.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/agp_backend.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sisfb.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/io.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/video/fbcon.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/video/fbcon-cfb8.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/video/fbcon-cfb16.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/video/fbcon-cfb24.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/video/fbcon-cfb32.h \
+   osdef.h \
+   vgatypes.h \
+   sis_main.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/fb/sis/300.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/fb/sis/315.h)
+sis_main.h: \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/fb/sis/300.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/fb/sis/315.h)
+	@touch sis_main.h
+.PRECIOUS:	init301.h \
+	init.h \
+	sis_main.h \
+

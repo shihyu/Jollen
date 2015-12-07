@@ -1,0 +1,41 @@
+autofs_i.h: \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/auto_fs4.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/list.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/wait.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/uaccess.h
+	@touch autofs_i.h
+expire.o: expire.c \
+   autofs_i.h
+init.o: init.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   autofs_i.h
+inode.o: inode.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/file.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/locks.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/bitops.h \
+   autofs_i.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h
+root.o: root.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/errno.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/stat.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/param.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/smp_lock.h \
+   autofs_i.h
+symlink.o: symlink.c \
+   autofs_i.h
+waitq.o: waitq.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/signal.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/file.h \
+   autofs_i.h
+.PRECIOUS:	autofs_i.h \
+

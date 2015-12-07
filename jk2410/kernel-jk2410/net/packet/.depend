@@ -1,0 +1,40 @@
+af_packet.o: af_packet.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mm.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fcntl.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/socket.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/in.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/inet.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/netdevice.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/if_packet.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/wireless.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kmod.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/ip.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/protocol.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/skbuff.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/sock.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/errno.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/timer.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/system.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/uaccess.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/ioctls.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/proc_fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/poll.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/if_bridge.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/net/divert.h) \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/divert.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/inet.h) \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/inet_common.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/dlci.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/packet/multicast.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/packet/mmap.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/sock/packet.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/filter.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/bridge.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/bridge/module.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/kmod.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/net/radio.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/proc/fs.h)

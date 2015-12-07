@@ -1,0 +1,23 @@
+dir.o: dir.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/efs_fs.h
+file.o: file.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/efs_fs.h
+inode.o: inode.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/efs_fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/efs_fs_sb.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h
+namei.o: namei.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/efs_fs.h
+super.o: super.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/locks.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/efs_fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/efs_vh.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/efs_fs_sb.h
+symlink.o: symlink.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/efs_fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pagemap.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/smp_lock.h

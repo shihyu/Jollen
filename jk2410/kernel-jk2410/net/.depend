@@ -1,0 +1,113 @@
+netsyms.o: netsyms.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/net.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/in.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/netdevice.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/inetdevice.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fddidevice.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/trdevice.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fcdevice.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ioport.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/tty.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/neighbour.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/snmp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/dst.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/checksum.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/etherdevice.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/route.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/hippi.h) \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/hippidevice.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/pkt_sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/scm.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/if_bridge.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/if_vlan.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/random.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/net/divert.h) \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/divert.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/net.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/inet.h) \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ip.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/protocol.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/arp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/ip.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/udp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/tcp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/icmp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/inet_common.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/inet.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mroute.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/igmp.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/ipv6.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/ipv6/module.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/khttpd.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/khttpd/module.h) \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/in6.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/icmpv6.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/ipv6.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/ndisc.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/transp_v6.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/addrconf.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/rtnetlink.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/ipx/module.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/atalk/module.h) \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/sock.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/sysctl.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/filter.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/arpd.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/vlan/8021q.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/vlan/8021q/module.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/bridge.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/bridge/module.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/dlci/module.h) \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/ip6_route.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/netlink/dev.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/netlink/dev/module.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/tr.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/fddi.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/kmod.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/net/hw/flowcontrol.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/net/fastroute.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/net/sched.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/net/estimator.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/net/cls/police.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/net/cls.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/netfilter.h) \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/netfilter.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/netfilter_ipv4.h
+socket.o: socket.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mm.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/smp_lock.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/socket.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/file.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/net.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/interrupt.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/netdevice.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/proc_fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/wanrouter.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/netlink.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/rtnetlink.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/poll.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/cache.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/highmem.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/kmod.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/net.h) \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kmod.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/uaccess.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/sock.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/scm.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/netfilter.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/smp.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/wan/router.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/bluez.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/netlink/dev.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/netfilter.h)
+sysctl_net.o: sysctl_net.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mm.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sysctl.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/inet.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/net.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/ipv6.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/tr.h)

@@ -1,0 +1,17 @@
+sm.o: sm.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acpi.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/ospm/include/sm.h
+sm_osl.o: sm_osl.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/proc_fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pm.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/uaccess.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/acpi.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/io.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mc146818rtc.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acpi.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/ospm/include/sm.h

@@ -1,0 +1,40 @@
+rsaddr.o: rsaddr.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acpi.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acresrc.h
+rscalc.o: rscalc.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acpi.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acresrc.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/amlcode.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acnamesp.h
+rscreate.o: rscreate.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acpi.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acresrc.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/amlcode.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acnamesp.h
+rsdump.o: rsdump.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acpi.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acresrc.h
+rsio.o: rsio.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acpi.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acresrc.h
+rsirq.o: rsirq.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acpi.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acresrc.h
+rslist.o: rslist.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acpi.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acresrc.h
+rsmemory.o: rsmemory.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acpi.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acresrc.h
+rsmisc.o: rsmisc.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acpi.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acresrc.h
+rsutils.o: rsutils.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acpi.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acnamesp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acresrc.h
+rsxface.o: rsxface.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acpi.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acinterp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acnamesp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acresrc.h

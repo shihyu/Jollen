@@ -1,0 +1,46 @@
+l3-algo-bit.o: l3-algo-bit.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/errno.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/l3/l3.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/l3/algo-bit.h
+l3-bit-sa1100.o: l3-bit-sa1100.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ioport.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/i2c-algo-bit.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/l3/algo-bit.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/system.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/mach-types.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/i2c/bit/sa1100/gpio.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/l3/bit/sa1100/gpio.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/sa1100/h3600.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/sa1100/h3100.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/sa1100/stork.h)
+l3-core.o: l3-core.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/errno.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/proc_fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kmod.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/l3/l3.h
+l3-sa1111.o: l3-sa1111.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/errno.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/l3/l3.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/semaphore.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/mach-types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware/sa1111.h

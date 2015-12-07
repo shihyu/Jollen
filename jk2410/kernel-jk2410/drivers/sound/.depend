@@ -1,0 +1,1162 @@
+ac97.o: ac97.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   ac97.h
+ac97_codec.o: ac97_codec.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/version.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/errno.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/bitops.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ac97_codec.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/uaccess.h
+ac97.h: \
+   sound_config.h \
+   sound_calls.h
+	@touch ac97.h
+aci.o: aci.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/proc_fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/semaphore.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/io.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/uaccess.h \
+   sound_config.h \
+   aci.h
+ad1816.o: ad1816.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/isapnp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/stddef.h \
+   sound_config.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/isapnp.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/isapnp/module.h)
+ad1848.o: ad1848.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/stddef.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pm.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/isapnp.h \
+   sound_config.h \
+   ad1848.h \
+   ad1848_mixer.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/isapnp.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/isapnp/module.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/smp.h)
+adlib_card.o: adlib_card.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   sound_config.h \
+   opl3.h
+aedsp16.o: aedsp16.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   sound_config.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/sound/aedsp16/sbpro.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/sound/aedsp16/mss.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/sc6600.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/sc6600/joy.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/sc6600/cdrom.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/sc6600/cdrombase.h)
+assabet-uda1341.o: assabet-uda1341.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pm.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/errno.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sound.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/soundcard.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/cpufreq.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/l3/l3.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/l3/uda1341.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/semaphore.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/uaccess.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/dma.h \
+   sa1100-audio.h
+audio.o: audio.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/stddef.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kmod.h \
+   sound_config.h \
+   ulaw.h \
+   coproc.h
+audio_syms.o: audio_syms.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   sound_config.h \
+   sound_calls.h
+awe_wave.o: awe_wave.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/awe_voice.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/isapnp.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/isapnp/module.h) \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/isapnp.h \
+   sound_config.h \
+   awe_wave.h \
+   awe_hw.h \
+   tuning.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ultrasound.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/awe32/mixer.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/awe32/midiemu.h)
+btaudio.o: btaudio.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/version.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/errno.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pci.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/signal.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/wrapper.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/interrupt.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/poll.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sound.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/soundcard.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/uaccess.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/io.h
+cmpci.o: cmpci.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/version.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ioport.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sound.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/soundcard.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pci.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/wrapper.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/io.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/dma.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/poll.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/spinlock.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/smp_lock.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/uaccess.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardirq.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/bitops.h \
+   dm.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/sound/cmpci/midi.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/sound/cmpci.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/sound/cmpci/fm.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/sound/cmpci/mpuio.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/sound/cmpci/fmio.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/sound/cmpci/spdifinverse.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/sound/cmpci/spdifloop.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/sound/cmpci/speakers.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/sound/cmpci/line/rear.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/sound/cmpci/line/bass.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/sound/cmpci/joystick.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/pci.h)
+cs4232.o: cs4232.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/isapnp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   sound_config.h \
+   cs4232.h \
+   ad1848.h \
+   mpu401.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/sound/wavefront/module.h)
+cs46xx.o: cs46xx.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/list.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/version.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ioport.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sound.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/soundcard.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pci.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/bitops.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/io.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/dma.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/poll.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/smp_lock.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/wrapper.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/uaccess.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardirq.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ac97_codec.h \
+   cs46xxpm-24.h \
+   cs46xx_wrapper-24.h \
+   cs461x.h \
+   cs461x_image.h
+cs46xxpm-24.h: \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pm.h \
+   cs46xxpm.h
+	@touch cs46xxpm-24.h
+cs46xx_wrapper-24.h: \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/spinlock.h
+	@touch cs46xx_wrapper-24.h
+dev_table.o: dev_table.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   sound_config.h
+dmabuf.o: dmabuf.c \
+   sound_config.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/wrapper.h
+es1370.o: es1370.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/version.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ioport.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sound.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/soundcard.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pci.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/smp_lock.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/wrapper.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/io.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/dma.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/poll.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/spinlock.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/uaccess.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardirq.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/gameport.h
+es1371.o: es1371.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/version.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ioport.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sound.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/soundcard.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pci.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/poll.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/bitops.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/proc_fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/spinlock.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/smp_lock.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ac97_codec.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/wrapper.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/io.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/dma.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/uaccess.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardirq.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/gameport.h
+esssolo1.o: esssolo1.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/version.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ioport.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sound.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/soundcard.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pci.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/bitops.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/io.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/dma.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/poll.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/spinlock.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/smp_lock.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/wrapper.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/uaccess.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardirq.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/gameport.h \
+   dm.h
+gus_card.o: gus_card.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   sound_config.h \
+   gus.h \
+   gus_hw.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/sound/gus16.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/sound/gusmax.h)
+gus.h: \
+   ad1848.h
+	@touch gus.h
+gus_midi.o: gus_midi.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   sound_config.h \
+   gus.h \
+   gus_hw.h \
+   midi_synth.h
+gus_vol.o: gus_vol.c \
+   sound_config.h \
+   gus.h \
+   gus_linearvol.h
+gus_wave.o: gus_wave.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   sound_config.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ultrasound.h \
+   gus.h \
+   gus_hw.h \
+   iwmem.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/sound/gusmax.h)
+h3600-uda1341.o: h3600-uda1341.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pm.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/errno.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sound.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/soundcard.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/l3/l3.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/l3/uda1341.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/semaphore.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/uaccess.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/dma.h \
+   sa1100-audio.h
+i810_audio.o: i810_audio.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/version.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ctype.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ioport.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sound.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/soundcard.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pci.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/io.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/dma.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/poll.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/spinlock.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/smp_lock.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ac97_codec.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/wrapper.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/uaccess.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardirq.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/pm.h)
+ics2101.o: ics2101.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   sound_config.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ultrasound.h \
+   gus.h \
+   gus_hw.h
+ite8172.o: ite8172.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/version.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ioport.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sound.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/soundcard.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pci.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/poll.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/bitops.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/proc_fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/spinlock.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/smp_lock.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ac97_codec.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/wrapper.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/io.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/dma.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/uaccess.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardirq.h
+mad16.o: mad16.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   sound_config.h \
+   ad1848.h \
+   sb.h \
+   mpu401.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/mad16/oldcard.h)
+maestro3.o: maestro3.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ctype.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ioport.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sound.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/soundcard.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pci.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/vmalloc.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/io.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/dma.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/poll.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/reboot.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/uaccess.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardirq.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/spinlock.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ac97_codec.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/wrapper.h \
+   maestro3.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/pm.h)
+maestro.o: maestro.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/version.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/smp_lock.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/wrapper.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ctype.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ioport.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sound.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/soundcard.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pci.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/spinlock.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/io.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/dma.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/poll.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/reboot.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/uaccess.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardirq.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/bitops.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pm.h \
+   maestro.h
+maui.o: maui.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   sound_config.h \
+   sound_firmware.h \
+   mpu401.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/smp.h)
+midibuf.o: midibuf.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/stddef.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kmod.h \
+   sound_config.h
+midi_syms.o: midi_syms.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   sound_config.h \
+   midi_synth.h
+midi_synth.o: midi_synth.c \
+   sound_config.h \
+   midi_synth.h
+mpu401.o: mpu401.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   sound_config.h \
+   coproc.h \
+   mpu401.h \
+   midi_synth.h
+msnd.o: msnd.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/version.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/vmalloc.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mm.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/major.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sound.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/segment.h \
+   sound_config.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/io.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/uaccess.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/spinlock.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/irq.h \
+   msnd.h
+msnd_classic.o: msnd_classic.c \
+   msnd_pinnacle.c
+msnd_classic.h: \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/msndclas/init/file.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/msndclas/perm/file.h)
+	@touch msnd_classic.h
+msnd_pinnacle.o: msnd_pinnacle.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/version.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/smp_lock.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/irq.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/io.h \
+   sound_config.h \
+   sound_firmware.h \
+   msnd.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/msndclas/have/boot.h) \
+   msnd_classic.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/msndpin/have/boot.h) \
+   msnd_pinnacle.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/msnd/write/ndelay.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/msndclas/io.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/msndclas/irq.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/msndclas/mem.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/msndpin/io.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/msndpin/irq.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/msndpin/mem.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/msndpin/nonpnp.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/msndpin/cfg.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/msndpin/mpu/io.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/msndpin/mpu/irq.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/msndpin/ide/io0.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/msndpin/ide/io1.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/msndpin/ide/irq.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/msndpin/joystick/io.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/msndpin/digital.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/msnd/fifosize.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/msnd/calsignal.h)
+msnd_pinnacle.h: \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/msndpin/init/file.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/msndpin/perm/file.h)
+	@touch msnd_pinnacle.h
+nec_vrc5477.o: nec_vrc5477.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/version.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ioport.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sound.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/soundcard.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pci.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/poll.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/bitops.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/proc_fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/spinlock.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/smp_lock.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ac97_codec.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/wrapper.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/io.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/dma.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/uaccess.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardirq.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/ll/debug.h)
+nm256_audio.o: nm256_audio.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pci.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pm.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   sound_config.h \
+   nm256.h \
+   nm256_coeff.h
+nm256.h: \
+   ac97.h
+	@touch nm256.h
+opl3.o: opl3.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   sound_config.h \
+   opl3.h \
+   opl3_hw.h
+opl3sa2.o: opl3sa2.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/isapnp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pm.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   sound_config.h \
+   ad1848.h \
+   mpu401.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/isapnp.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/isapnp/module.h)
+opl3sa.o: opl3sa.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   sound_config.h \
+   ad1848.h \
+   mpu401.h \
+   sb.h
+os.h: \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/version.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/utsname.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/dma.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/io.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/param.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ptrace.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ioport.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/page.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/system.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/segment.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/vmalloc.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/uaccess.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/poll.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pci.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/wrapper.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/soundcard.h
+	@touch os.h
+pangolin-uda1341.o: pangolin-uda1341.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pm.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/errno.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sound.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/soundcard.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/l3/l3.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/l3/uda1341.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/semaphore.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/uaccess.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/dma.h \
+   sa1100-audio.h
+pas2_card.o: pas2_card.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   sound_config.h \
+   pas2.h \
+   sb.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/pas/joystick.h)
+pas2_midi.o: pas2_midi.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   sound_config.h \
+   pas2.h \
+   midi_synth.h
+pas2_mixer.o: pas2_mixer.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   sound_config.h \
+   pas2.h
+pas2_pcm.o: pas2_pcm.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   sound_config.h \
+   pas2.h
+pss.o: pss.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   sound_config.h \
+   sound_firmware.h \
+   ad1848.h \
+   mpu401.h \
+   coproc.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/pss/mixer.h)
+pxa-ac97.o: pxa-ac97.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pci.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/completion.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/poll.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sound.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/soundcard.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ac97_codec.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/irq.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/uaccess.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/semaphore.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/dma.h \
+   pxa-audio.h
+pxa-audio.o: pxa-audio.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pci.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/poll.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sound.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/soundcard.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/irq.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/uaccess.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/semaphore.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/dma.h \
+   pxa-audio.h
+rme96xx.o: rme96xx.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/version.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sound.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/soundcard.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pci.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/smp_lock.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/dma.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/poll.h \
+   rme96xx.h
+s3c2410-uda1341.o: s3c2410-uda1341.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mm.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/poll.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/interrupt.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/errno.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sound.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/soundcard.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pm.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/uaccess.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/io.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/semaphore.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/dma.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/arch/cpu_s3c2410.h
+sa1100-audio.o: sa1100-audio.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mm.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/poll.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pm.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/errno.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sound.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/soundcard.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sysrq.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/uaccess.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/io.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/semaphore.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/dma.h \
+   sa1100-audio.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/pm.h)
+sa1100ssp.o: sa1100ssp.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pm.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/errno.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sound.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/soundcard.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/semaphore.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/uaccess.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/dma.h \
+   sa1100-audio.h
+sa1111-uda1341.o: sa1111-uda1341.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/errno.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sound.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/soundcard.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ioport.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pm.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/l3/l3.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/l3/uda1341.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/semaphore.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/mach-types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/uaccess.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/dma.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware/sa1111.h \
+   sa1100-audio.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/assabet/neponset.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/sa1100/jornada720.h)
+sb_audio.o: sb_audio.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/spinlock.h \
+   sound_config.h \
+   sb_mixer.h \
+   sb.h \
+   sb_ess.h
+sb_card.o: sb_card.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mca.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/isapnp.h \
+   sound_config.h \
+   sb_mixer.h \
+   sb.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/isapnp.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/isapnp/module.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/mca.h)
+sb_common.o: sb_common.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/spinlock.h \
+   sound_config.h \
+   sound_firmware.h \
+   mpu401.h \
+   sb_mixer.h \
+   sb.h \
+   sb_ess.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/sound/mpu401.h)
+sb_ess.o: sb_ess.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/spinlock.h \
+   sound_config.h \
+   sb_mixer.h \
+   sb.h \
+   sb_ess.h
+sb_midi.o: sb_midi.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/spinlock.h \
+   sound_config.h \
+   sb.h \
+   midi_synth.h
+sb_mixer.o: sb_mixer.c \
+   sound_config.h \
+   sb.h \
+   sb_mixer.h \
+   sb_ess.h
+sequencer.o: sequencer.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kmod.h \
+   sound_config.h \
+   midi_ctrl.h \
+   tuning.h
+sequencer_syms.o: sequencer_syms.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   sound_config.h \
+   sound_calls.h \
+   tuning.h
+sgalaxy.o: sgalaxy.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   sound_config.h \
+   ad1848.h
+skeleton.o: skeleton.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/errno.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pci.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/io.h \
+   sound_config.h
+sonicvibes.o: sonicvibes.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/version.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ioport.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sound.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/soundcard.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pci.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/io.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/dma.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/poll.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/spinlock.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/smp_lock.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/wrapper.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/uaccess.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardirq.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/gameport.h \
+   dm.h
+soundcard.o: soundcard.c \
+   sound_config.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/errno.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/signal.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fcntl.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ctype.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/stddef.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kmod.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/dma.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/io.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/segment.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/wait.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ioport.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/devfs_fs_kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/major.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/proc_fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/smp_lock.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/sound/dmap.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/pci.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/sound/traceinit.h)
+sound_config.h: \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sound.h \
+   os.h \
+   soundvers.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/pas/base.h) \
+   sound_calls.h \
+   dev_table.h
+	@touch sound_config.h
+sound_core.o: sound_core.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sound.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/major.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kmod.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/devfs_fs_kernel.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/sound/msndclas.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/sound/msndpin.h)
+sound_firmware.o: sound_firmware.c \
+   os.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mm.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/unistd.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/uaccess.h
+sound_syms.o: sound_syms.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   sound_config.h \
+   sound_calls.h
+sound_timer.o: sound_timer.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   sound_config.h
+sscape.o: sscape.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   sound_config.h \
+   sound_firmware.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/errno.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/signal.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fcntl.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ctype.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/stddef.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kmod.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/dma.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/io.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/segment.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/wait.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ioport.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/proc_fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/wrapper.h \
+   coproc.h \
+   ad1848.h \
+   mpu401.h
+sys_timer.o: sys_timer.c \
+   sound_config.h
+trident.o: trident.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/version.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ctype.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ioport.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sound.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/soundcard.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pci.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/io.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/dma.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/poll.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/spinlock.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/smp_lock.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ac97_codec.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/wrapper.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/uaccess.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardirq.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/bitops.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/proc_fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/interrupt.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/alpha/nautilus.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/alpha/generic.h) \
+   trident.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pm.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/proc/fs.h)
+trix.o: trix.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   sound_config.h \
+   sb.h \
+   sound_firmware.h \
+   ad1848.h \
+   mpu401.h
+uart401.o: uart401.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   sound_config.h \
+   mpu401.h \
+   midi_synth.h
+uart6850.o: uart6850.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   sound_config.h \
+   midi_synth.h
+uda1341.o: uda1341.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/errno.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ioctl.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/soundcard.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/l3/l3.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/l3/uda1341.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/uaccess.h
+via82cxxx_audio.o: via82cxxx_audio.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mm.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pci.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/proc_fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/spinlock.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sound.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/poll.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/soundcard.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ac97_codec.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/smp_lock.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ioport.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/wrapper.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/io.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/uaccess.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardirq.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/semaphore.h \
+   sound_config.h \
+   dev_table.h \
+   mpu401.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/proc/fs.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/sound/via82cxxx/procfs.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/midi/via82cxxx.h)
+vidc.o: vidc.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/dma.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/io.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware/iomd.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/irq.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/system.h \
+   sound_config.h \
+   vidc.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/sound/softoss.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/sound/softoss/module.h)
+vidc_fill.o: vidc_fill.S \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/linkage.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/assembler.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware/iomd.h
+v_midi.o: v_midi.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   sound_config.h \
+   v_midi.h \
+   midi_synth.h
+vwsnd.o: vwsnd.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/stddef.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/spinlock.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/smp_lock.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/semaphore.h \
+   sound_config.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/interrupt.h
+waveartist.o: waveartist.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/interrupt.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/spinlock.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/bitops.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/system.h \
+   sound_config.h \
+   waveartist.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/arm.h) \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/mach-types.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/arch/netwinder.h) \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware/dec21285.h
+wavfront.o: wavfront.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/smp_lock.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ptrace.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fcntl.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ioport.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/interrupt.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   sound_config.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/wavefront.h \
+   midi_synth.h \
+   os.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mm.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/unistd.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/uaccess.h \
+   yss225.h
+wf_midi.o: wf_midi.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   sound_config.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/wavefront.h \
+   midi_synth.h
+ymfpci.o: ymfpci.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ioport.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pci.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/poll.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/soundcard.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ac97_codec.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sound.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/io.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/dma.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/uaccess.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/sound/ymfpci/legacy.h) \
+   sound_config.h \
+   mpu401.h \
+   ymfpci.h \
+   ymfpci_image.h
+ymfpci.h: \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/sound/ymfpci/legacy.h)
+	@touch ymfpci.h
+yss225.o: yss225.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h
+.PRECIOUS:	ac97.h \
+	cs46xxpm-24.h \
+	cs46xx_wrapper-24.h \
+	gus.h \
+	msnd_classic.h \
+	msnd_pinnacle.h \
+	nm256.h \
+	os.h \
+	sound_config.h \
+	ymfpci.h \
+

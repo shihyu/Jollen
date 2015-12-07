@@ -1,0 +1,96 @@
+balloc.o: balloc.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/jbd.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ext3_fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ext3_jbd.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/locks.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/quotaops.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/jbd/debug.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/ext3/check.h)
+bitmap.o: bitmap.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fs.h
+dir.o: dir.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/jbd.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ext3_fs.h
+file.o: file.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/locks.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/jbd.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ext3_fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ext3_jbd.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/smp_lock.h
+fsync.o: fsync.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/jbd.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ext3_fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ext3_jbd.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/jbd.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/smp_lock.h
+ialloc.o: ialloc.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/jbd.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ext3_fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ext3_jbd.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/stat.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/locks.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/quotaops.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/bitops.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/byteorder.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/ext3/check.h)
+inode.o: inode.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ext3_jbd.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/jbd.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/locks.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/smp_lock.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/highuid.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/quotaops.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/quota.h)
+ioctl.o: ioctl.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/jbd.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ext3_fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ext3_jbd.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/uaccess.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/jbd/debug.h)
+namei.o: namei.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/jbd.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ext3_fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ext3_jbd.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fcntl.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/stat.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/locks.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/quotaops.h
+super.o: super.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/jbd.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ext3_fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ext3_jbd.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/locks.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/blkdev.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/smp_lock.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/random.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/uaccess.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/jbd/debug.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/ext3/check.h)
+symlink.o: symlink.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/jbd.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ext3_fs.h

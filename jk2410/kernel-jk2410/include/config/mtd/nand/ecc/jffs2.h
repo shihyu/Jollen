@@ -1,0 +1,1 @@
+#define CONFIG_MTD_NAND_ECC_JFFS2 1

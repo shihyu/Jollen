@@ -1,0 +1,161 @@
+ashldi3.o: ashldi3.c \
+   gcclib.h
+ashrdi3.o: ashrdi3.c \
+   gcclib.h
+backtrace.o: backtrace.S \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/linkage.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/assembler.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/frame/pointer.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/cpu/32.h)
+changebit.o: changebit.S \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/linkage.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/assembler.h
+clearbit.o: clearbit.S \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/linkage.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/assembler.h
+copy_page.o: copy_page.S \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/linkage.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/assembler.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/constants.h
+csumipv6.o: csumipv6.S \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/linkage.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/assembler.h
+csumpartialcopy.o: csumpartialcopy.S \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/linkage.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/assembler.h \
+   csumpartialcopygeneric.S
+csumpartialcopyuser.o: csumpartialcopyuser.S \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/linkage.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/assembler.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/errno.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/constants.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/cpu/32.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/cpu/26.h) \
+   csumpartialcopygeneric.S
+csumpartial.o: csumpartial.S \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/linkage.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/assembler.h
+delay.o: delay.S \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/linkage.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/assembler.h
+ecard.o: ecard.S \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/linkage.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/assembler.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/cpu/26.h)
+findbit.o: findbit.S \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/linkage.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/assembler.h
+floppydma.o: floppydma.S \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/linkage.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/assembler.h
+getuser.o: getuser.S \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/constants.h
+io-acorn.o: io-acorn.S \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/linkage.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/assembler.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/cpu/26.h)
+io-readsb.o: io-readsb.S \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/linkage.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/assembler.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware.h
+io-readsl-armv3.o: io-readsl-armv3.S \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/linkage.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/assembler.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware.h
+io-readsl-armv4.o: io-readsl-armv4.S \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/linkage.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/assembler.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware.h
+io-readsw-armv3.o: io-readsw-armv3.S \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/linkage.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/assembler.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware.h
+io-readsw-armv4.o: io-readsw-armv4.S \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/linkage.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/assembler.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware.h
+io-shark.o: io-shark.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/io.h
+io-writesb.o: io-writesb.S \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/linkage.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/assembler.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware.h
+io-writesl.o: io-writesl.S \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/linkage.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/assembler.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware.h
+io-writesw-armv3.o: io-writesw-armv3.S \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/linkage.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/assembler.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware.h
+io-writesw-armv4.o: io-writesw-armv4.S \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/linkage.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/assembler.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware.h
+kbd.o: kbd.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kd.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/magic/sysrq.h)
+lib1funcs.o: lib1funcs.S \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/linkage.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/assembler.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/cpu/26.h)
+lshrdi3.o: lshrdi3.c \
+   gcclib.h
+memchr.o: memchr.S \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/linkage.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/assembler.h
+memcpy.o: memcpy.S \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/linkage.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/assembler.h
+memset.o: memset.S \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/linkage.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/assembler.h
+memzero.o: memzero.S \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/linkage.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/assembler.h
+muldi3.o: muldi3.c \
+   gcclib.h
+putuser.o: putuser.S \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/constants.h
+setbit.o: setbit.S \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/linkage.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/assembler.h
+strchr.o: strchr.S \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/linkage.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/assembler.h
+strncpy_from_user.o: strncpy_from_user.S \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/linkage.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/assembler.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/errno.h
+strnlen_user.o: strnlen_user.S \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/linkage.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/assembler.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/errno.h
+strrchr.o: strrchr.S \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/linkage.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/assembler.h
+testchangebit.o: testchangebit.S \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/linkage.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/assembler.h
+testclearbit.o: testclearbit.S \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/linkage.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/assembler.h
+testsetbit.o: testsetbit.S \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/linkage.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/assembler.h
+uaccess-armo.o: uaccess-armo.S \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/linkage.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/assembler.h
+uaccess.o: uaccess.S \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/linkage.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/assembler.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/errno.h
+ucmpdi2.o: ucmpdi2.c \
+   gcclib.h
+udivdi3.o: udivdi3.c \
+   gcclib.h \
+   longlong.h

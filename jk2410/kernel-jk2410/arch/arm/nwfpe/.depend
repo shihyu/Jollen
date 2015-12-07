@@ -1,0 +1,80 @@
+double_cpdo.o: double_cpdo.c \
+   fpa11.h \
+   softfloat.h \
+   fpopcode.h
+entry26.o: entry26.S \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/constants.h
+extended_cpdo.o: extended_cpdo.c \
+   fpa11.h \
+   softfloat.h \
+   fpopcode.h
+fpa11.o: fpa11.c \
+   fpa11.h \
+   fpopcode.h \
+   fpmodule.h \
+   fpmodule.inl \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/system.h
+fpa11_cpdo.o: fpa11_cpdo.c \
+   fpa11.h \
+   fpopcode.h
+fpa11_cpdt.o: fpa11_cpdt.c \
+   fpa11.h \
+   softfloat.h \
+   fpopcode.h \
+   fpmodule.h \
+   fpmodule.inl \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/uaccess.h
+fpa11_cprt.o: fpa11_cprt.c \
+   fpa11.h \
+   milieu.h \
+   softfloat.h \
+   fpopcode.h \
+   fpa11.inl \
+   fpmodule.h \
+   fpmodule.inl
+fpa11.h: \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   fpsr.h \
+   softfloat.h
+	@touch fpa11.h
+fpmodule.o: fpmodule.c \
+   fpa11.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/version.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/signal.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   softfloat.h \
+   fpopcode.h \
+   fpmodule.h \
+   fpa11.inl \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/debug/user.h)
+fpmodule.h: \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/cpu/32.h)
+	@touch fpmodule.h
+fpopcode.o: fpopcode.c \
+   fpa11.h \
+   softfloat.h \
+   fpopcode.h \
+   fpsr.h \
+   fpmodule.h \
+   fpmodule.inl
+milieu.h: \
+   ARM-gcc.h
+	@touch milieu.h
+single_cpdo.o: single_cpdo.c \
+   fpa11.h \
+   softfloat.h \
+   fpopcode.h
+softfloat.o: softfloat.c \
+   fpa11.h \
+   milieu.h \
+   softfloat.h \
+   softfloat-macros \
+   softfloat-specialize
+.PRECIOUS:	fpa11.h \
+	fpmodule.h \
+	milieu.h \
+

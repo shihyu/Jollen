@@ -1,0 +1,282 @@
+af_irda.o: af_irda.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/socket.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sockios.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/if_arp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/net.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/irda.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/poll.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/uaccess.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/sock.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irda.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/iriap.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irias_object.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irlmp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irttp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/discovery.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/irda/ultra.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/irda/debug.h) \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/smp_lock.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/proc/fs.h)
+crc.o: crc.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/crc.h
+discovery.o: discovery.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/socket.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irda.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irlmp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/discovery.h
+irda_device.o: irda_device.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/proc_fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/skbuff.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/if.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/if_ether.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/if_arp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/netdevice.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/tty.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kmod.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/wireless.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/spinlock.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/ioctls.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/segment.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/uaccess.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/dma.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/io.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/pkt_sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irda_device.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irlap.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/timer.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/wrapper.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/irda/debug.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/proc/fs.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/irtty/sir.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/winbond/fir.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/sa1100/fir.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/nsc/fir.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/toshiba/fir.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/smc/ircc/fir.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/esi/dongle.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/tekram/dongle.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/actisys/dongle.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/girbil/dongle.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/litelink/dongle.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/old/belkin.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/ep7211/ir.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/kmod.h)
+iriap.o: iriap.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/skbuff.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/byteorder.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/unaligned.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irda.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irttp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irmod.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irlmp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irias_object.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/iriap_event.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/iriap.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/irda/debug.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/irda/ultra.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/proc/fs.h)
+iriap_event.o: iriap_event.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irda.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irlmp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/iriap.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/iriap_event.h
+irias_object.o: irias_object.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/socket.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irda.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irmod.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irias_object.h
+irlap.o: irlap.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/skbuff.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/proc_fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/random.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irda.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irda_device.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irqueue.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irlmp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irlmp_frame.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irlap_frame.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irlap.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/timer.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/qos.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/irda/debug.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/proc/fs.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/irda/ultra.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/irda/dynamic/window.h)
+irlap_event.o: irlap_event.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/skbuff.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irda.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irlap_event.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/timer.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irlap.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irlap_frame.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/qos.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/parameters.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irda_device.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/irda/fast/rr.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/irda/debug.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/irda/dynamic/window.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/irda/ultra.h)
+irlap_frame.o: irlap_frame.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/skbuff.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/if.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/if_ether.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/netdevice.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/irda.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/pkt_sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/sock.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/byteorder.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/unaligned.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irda.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irda_device.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irlap.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/wrapper.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/timer.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irlap_frame.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/qos.h
+irlmp.o: irlmp.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/skbuff.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/proc_fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kmod.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/random.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irda.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irmod.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/timer.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/qos.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irlap.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/iriap.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irlmp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irlmp_frame.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/proc/fs.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/irda/cache/last/lsap.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/irda/ultra.h)
+irlmp_event.o: irlmp_event.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irda.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/timer.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irlap.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irlmp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irlmp_frame.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irlmp_event.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/irda/debug.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/irda/ultra.h)
+irlmp_frame.o: irlmp_frame.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/skbuff.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irda.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irlap.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/timer.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irlmp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irlmp_frame.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/discovery.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/irda/ultra.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/irda/cache/last/lsap.h)
+irproc.o: irproc.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/miscdevice.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/proc_fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irda.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irmod.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irlap.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irlmp.h
+irqueue.o: irqueue.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irda.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irqueue.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irmod.h
+irsyms.o: irsyms.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/poll.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/proc_fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/smp_lock.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/segment.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irda.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irmod.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irlap.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irlmp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/iriap.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irias_object.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irttp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irda_device.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/wrapper.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/timer.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/parameters.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/irda/debug.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/proc/fs.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/irtty.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/sysctl.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/irlan.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/ircomm.h)
+irsysctl.o: irsysctl.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mm.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ctype.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sysctl.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/segment.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irda.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irias_object.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/irda/debug.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/irda/fast/rr.h)
+irttp.o: irttp.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/skbuff.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/byteorder.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/unaligned.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irda.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irmod.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irlap.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irlmp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/parameters.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irttp.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/proc/fs.h)
+parameters.o: parameters.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/unaligned.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/byteorder.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irda.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/parameters.h
+qos.o: qos.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/byteorder.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irda.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/parameters.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/qos.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irlap.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/irda/dynamic/window.h)
+timer.o: timer.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/system.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/timer.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irda.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irtty.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irlap.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irlmp_event.h
+wrapper.o: wrapper.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/skbuff.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/byteorder.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irda.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/wrapper.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irtty.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/crc.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irlap.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irlap_frame.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/net/irda/irda_device.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/mizi.h)

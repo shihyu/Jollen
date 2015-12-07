@@ -1,0 +1,439 @@
+bulkmem.o: bulkmem.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/errno.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mm.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/timer.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/proc_fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/cs_types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/ss.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/cs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/bulkmem.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/cistpl.h \
+   cs_internal.h
+cardbus.o: cardbus.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mm.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pci.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ioport.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/irq.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/io.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/version.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/cs_types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/ss.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/cs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/bulkmem.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/cistpl.h \
+   cs_internal.h
+cistpl.o: cistpl.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/major.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/errno.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/timer.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mm.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pci.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ioport.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/io.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/byteorder.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/cs_types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/bus_ops.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/ss.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/cs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/bulkmem.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/cisreg.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/cistpl.h \
+   cs_internal.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/cardbus.h)
+clps6700.o: clps6700.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/errno.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/proc_fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/spinlock.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/io.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/irq.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/page.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware/clps7111.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/version.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/cs_types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/ss.h \
+   clps6700.h
+cs.o: cs.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/major.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/errno.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mm.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/timer.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ioport.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/proc_fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pm.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pci.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/system.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/irq.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/version.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/cs_types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/ss.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/cs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/bulkmem.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/cistpl.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/cisreg.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/bus_ops.h \
+   cs_internal.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/pci.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/cardbus.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/pm.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/proc/fs.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/s3c2410/smdk.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/locked.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/io/req.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/irq/req.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/pcmcia/probe.h)
+cs_internal.h: \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/cardbus.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/proc/fs.h)
+	@touch cs_internal.h
+ds.o: ds.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/major.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/errno.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mm.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fcntl.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/smp_lock.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/timer.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ioctl.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/proc_fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/poll.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pci.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/version.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/cs_types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/cs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/bulkmem.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/cistpl.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/ds.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/devfs_fs_kernel.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/proc/fs.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/cardbus.h)
+hd64465_ss.o: hd64465_ss.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ioport.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/mm.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/vmalloc.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/errno.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/irq.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/io.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/version.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/cs_types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/cs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/ss.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/bulkmem.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/cistpl.h \
+   cs_internal.h
+i82092.o: i82092.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pci.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/cs_types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/ss.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/cs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/system.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/io.h \
+   i82092aa.h \
+   i82365.h
+i82365.o: i82365.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fcntl.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/errno.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/timer.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pci.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ioport.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/proc_fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/irq.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/io.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/bitops.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/segment.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/system.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/version.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/cs_types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/ss.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/cs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/isapnp.h \
+   i82365.h \
+   cirrus.h \
+   vg468.h \
+   ricoh.h \
+   o2micro.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/arch/ebsa110.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/s3c2410/smdk.h) \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/isa.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/proc/fs.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/isapnp.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/isapnp/module.h)
+pci_socket.o: pci_socket.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pci.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/interrupt.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/ss.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/io.h \
+   pci_socket.h
+rsrc_mgr.o: rsrc_mgr.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/errno.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ioport.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/timer.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/proc_fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pci.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/irq.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/io.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/cs_types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/ss.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/cs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/bulkmem.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/cistpl.h \
+   cs_internal.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/pcmcia/probe.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/pci.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/cardbus.h)
+sa1100_adsbitsy.o: sa1100_adsbitsy.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware.h \
+   sa1100_generic.h \
+   sa1111_generic.h
+sa1100_assabet.o: sa1100_assabet.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/irq.h \
+   sa1100_generic.h
+sa1100_badge4.o: sa1100_badge4.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware/sa1111.h \
+   sa1100_generic.h \
+   sa1111_generic.h
+sa1100_cerf.o: sa1100_cerf.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/irq.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/sa1100/cerf.h) \
+   sa1100_cerf.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/sa1100/cerf/cpld.h)
+sa1100_cerf.h: \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/irq.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/pxa/cerf.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/pxa/cerf/pda.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/pxa/cerf/board.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/sa1100/cerf.h) \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/sa1100/cerf/cpld.h)
+	@touch sa1100_cerf.h
+sa1100_flexanet.o: sa1100_flexanet.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/irq.h \
+   sa1100_generic.h
+sa1100_freebird.o: sa1100_freebird.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/irq.h \
+   sa1100_generic.h
+sa1100_graphicsclient.o: sa1100_graphicsclient.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/irq.h \
+   sa1100_generic.h
+sa1100_graphicsmaster.o: sa1100_graphicsmaster.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware.h \
+   sa1100_generic.h \
+   sa1111_generic.h
+sa1100.h: \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/cs_types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/ss.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/bulkmem.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/cistpl.h \
+   cs_internal.h \
+   sa1100_generic.h
+	@touch sa1100.h
+sa1100_h3600.o: sa1100_h3600.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/irq.h \
+   sa1100_generic.h
+sa1100_jornada720.o: sa1100_jornada720.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware.h \
+   sa1100_generic.h \
+   sa1111_generic.h
+sa1100_neponset.o: sa1100_neponset.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware/sa1111.h \
+   sa1100_generic.h \
+   sa1111_generic.h
+sa1100_pangolin.o: sa1100_pangolin.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/irq.h \
+   sa1100_generic.h \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/sa1100/pangolin/pcmcia/ide.h)
+sa1100_pfs168.o: sa1100_pfs168.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/irq.h \
+   sa1100_generic.h \
+   sa1111_generic.h
+sa1100_shannon.o: sa1100_shannon.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/irq.h \
+   sa1100_generic.h
+sa1100_simpad.o: sa1100_simpad.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/irq.h \
+   sa1100_generic.h
+sa1100_stork.o: sa1100_stork.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/i2c.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/irq.h \
+   sa1100_generic.h
+sa1100_xp860.o: sa1100_xp860.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/irq.h \
+   sa1100_generic.h
+sa1100_yopy.o: sa1100_yopy.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/irq.h \
+   sa1100_generic.h
+sa1111_generic.o: sa1111_generic.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ioport.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/hardware/sa1111.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/irq.h \
+   sa1100_generic.h \
+   sa1111_generic.h
+tcic.o: tcic.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/fcntl.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/string.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/io.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/bitops.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/segment.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/system.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/kernel.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/errno.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/slab.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/timer.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/ioport.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/proc_fs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/version.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/cs_types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/cs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/ss.h \
+   tcic.h
+ti113x.h: \
+   $(wildcard /home/hugh/mymy/my_kernel/kernel-jk2410/include/config/cardbus.h)
+	@touch ti113x.h
+yenta.o: yenta.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/init.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/pci.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/sched.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/interrupt.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/delay.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/linux/module.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/version.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/cs_types.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/ss.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/pcmcia/cs.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/io.h \
+   yenta.h \
+   i82365.h \
+   ti113x.h \
+   ricoh.h
+yenta.h: \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/include/asm/io.h \
+   pci_socket.h
+	@touch yenta.h
+.PRECIOUS:	cs_internal.h \
+	sa1100_cerf.h \
+	sa1100.h \
+	ti113x.h \
+	yenta.h \
+

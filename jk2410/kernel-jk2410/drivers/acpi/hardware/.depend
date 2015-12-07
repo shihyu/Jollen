@@ -1,0 +1,19 @@
+hwacpi.o: hwacpi.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acpi.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/achware.h
+hwgpe.o: hwgpe.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acpi.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/achware.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acnamesp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acevents.h
+hwregs.o: hwregs.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acpi.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/achware.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acnamesp.h
+hwsleep.o: hwsleep.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acpi.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acnamesp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/achware.h
+hwtimer.o: hwtimer.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acpi.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/achware.h

@@ -1,0 +1,49 @@
+evevent.o: evevent.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acpi.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/achware.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acevents.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acnamesp.h
+evmisc.o: evmisc.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acpi.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acevents.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acnamesp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acinterp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/achware.h
+evregion.o: evregion.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acpi.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acevents.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acnamesp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acinterp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/amlcode.h
+evrgnini.o: evrgnini.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acpi.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acevents.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acnamesp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acinterp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/amlcode.h
+evsci.o: evsci.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acpi.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acnamesp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/achware.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acevents.h
+evxface.o: evxface.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acpi.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/achware.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acnamesp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acevents.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/amlcode.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acinterp.h
+evxfevnt.o: evxfevnt.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acpi.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/achware.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acnamesp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acevents.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/amlcode.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acinterp.h
+evxfregn.o: evxfregn.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acpi.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/achware.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acnamesp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acevents.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/amlcode.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acinterp.h

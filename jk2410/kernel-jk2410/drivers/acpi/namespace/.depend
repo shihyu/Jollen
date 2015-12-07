@@ -1,0 +1,74 @@
+nsaccess.o: nsaccess.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acpi.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/amlcode.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acinterp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acnamesp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acdispat.h
+nsalloc.o: nsalloc.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acpi.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acnamesp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acinterp.h
+nsdump.o: nsdump.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acpi.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acinterp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acnamesp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/actables.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acparser.h
+nseval.o: nseval.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acpi.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/amlcode.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acparser.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acinterp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acnamesp.h
+nsinit.o: nsinit.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acpi.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acnamesp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acdispat.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acinterp.h
+nsload.o: nsload.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acpi.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acinterp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acnamesp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/amlcode.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acparser.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acdispat.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acdebug.h
+nsnames.o: nsnames.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acpi.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/amlcode.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acinterp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acnamesp.h
+nsobject.o: nsobject.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acpi.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/amlcode.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acnamesp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acinterp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/actables.h
+nssearch.o: nssearch.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acpi.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/amlcode.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acinterp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acnamesp.h
+nsutils.o: nsutils.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acpi.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acnamesp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acinterp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/amlcode.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/actables.h
+nswalk.o: nswalk.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acpi.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acinterp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acnamesp.h
+nsxfname.o: nsxfname.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acpi.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acinterp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acnamesp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/amlcode.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acparser.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acdispat.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acevents.h
+nsxfobj.o: nsxfobj.c \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acpi.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acinterp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acnamesp.h \
+   /home/hugh/mymy/my_kernel/kernel-jk2410/drivers/acpi/include/acdispat.h
